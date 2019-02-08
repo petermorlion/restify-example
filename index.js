@@ -40,7 +40,7 @@ server.get({name: "team", path: "/teams/:id"}, (req, res, next) => {
 });
 
 server.get("/games/:id", (req, res, next) => {
-    const game = inMemoryCollection.games.filter(value => value.id === req.params.id);
+    const game = inMemoryCollection.games.filter(value => value.id === req.params.id)[0];
     res.send({
         id: game.id,
         homeTeam: server.router.render("team", { id: game.homeTeamId }),
