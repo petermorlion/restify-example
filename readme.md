@@ -2,7 +2,7 @@
 
 This is a simple Restify example to accompany a blog post.
 It includes a Postman collection that you can use to call
-the API. You'll have to manually copy-paste some idea's
+the API. You'll have to manually copy-paste some id's
 between the different calls though.
 
 ## Usage
